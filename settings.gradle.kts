@@ -37,7 +37,15 @@ dependencyResolutionManagement {
       "appintro",
       "logback-core",
       "google-java-format",
-      "javac"
+      "javac",
+      "fuzzysearch",
+      "java-compiler",
+      "jdk-compiler",
+      "jdk-jdeps",
+      "javapoet",
+      "jaxp",
+      "jdt",
+      "layoutlib-api"
     ),
 
     "build-deps-common" to arrayOf(

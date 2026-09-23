@@ -38,7 +38,7 @@ dependencies {
     implementation(libs.common.kotlin.coroutines.core)
 
     // ECJ for Java compilation
-    implementation(libs.ecj)
+    implementation(libs.composite.jdt)
 
     // D8/R8
     implementation(libs.r8)

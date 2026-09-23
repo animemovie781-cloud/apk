@@ -25,7 +25,6 @@ benchmark-junit4 = "1.2.4"
 okhttp = "4.12.0"
 gson = "2.10.1"
 customizable-cardview = "v1.0"
-ecj = "3.33.0"
 zipalign = "1.1.2"
 r8 = "8.3.37"
 
@@ -155,7 +154,6 @@ aapt2-jb-annotations = { module = "org.jetbrains:annotations", version = "24.1.0
 aapt2-proto = { module = "com.android.tools.build:aapt2-proto", version = "8.3.0-10880808" }
 
 # Build Lightweight
-ecj = { module = "org.eclipse.jdt:ecj", version.ref = "ecj" }
 zipalign-java = { module = "com.iyxan23.zipalignjava:zipalign-java", version.ref = "zipalign" }
 apksig = { module = "com.android.tools.build:apksig", version.ref = "agp" }
 r8 = { module = "com.android.tools:r8", version.ref = "r8" }
