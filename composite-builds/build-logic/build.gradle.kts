@@ -26,4 +26,10 @@ subprojects {
       targetCompatibility = JavaVersion.VERSION_17
     }
   }
+  
+  plugins.withId("org.jetbrains.kotlin.jvm") {
+    extensions.getByType(org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension::class.java).apply {
+      jvmToolchain(17)
+    }
+  }
 }

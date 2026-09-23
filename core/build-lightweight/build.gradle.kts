@@ -25,6 +25,10 @@ java {
     targetCompatibility = JavaVersion.VERSION_17
 }
 
+kotlin {
+    jvmToolchain(17)
+}
+
 dependencies {
     implementation(project(":core:projects"))
     implementation(project(":logging:logger"))
@@ -37,7 +41,7 @@ dependencies {
     implementation(libs.ecj)
 
     // D8/R8
-    implementation(libs.bundles.shrinker)
+    implementation(libs.r8)
 
     // ZipAlign
     implementation(libs.zipalign.java)
@@ -46,6 +50,5 @@ dependencies {
     implementation(libs.apksig)
 
     // Kotlin compiler embedded
-    compileOnly(libs.kotlin.compiler)
-    implementation(libs.bundles.kotlin.compiler)
+    implementation(libs.kotlin.compiler.embeddable)
 }
